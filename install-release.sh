@@ -8,7 +8,7 @@
 # https://github.com/v2fly/fhs-install-v2ray
 
 # The URL of the script is:
-# https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh
+# https://hub.fastgit.xyz/v2fly/fhs-install-v2ray/master/install-release.sh
 
 # If the script executes incorrectly, go to:
 # https://github.com/v2fly/fhs-install-v2ray/issues
@@ -285,7 +285,7 @@ get_version() {
 }
 
 download_v2ray() {
-  DOWNLOAD_LINK="https://github.com/v2fly/v2ray-core/releases/download/$RELEASE_VERSION/v2ray-linux-$MACHINE.zip"
+  DOWNLOAD_LINK="https://download.fastgit.org/v2fly/v2ray-core/releases/download/$RELEASE_VERSION/v2ray-linux-$MACHINE.zip"
   echo "Downloading V2Ray archive: $DOWNLOAD_LINK"
   if ! curl -x "${PROXY}" -R -H 'Cache-Control: no-cache' -o "$ZIP_FILE" "$DOWNLOAD_LINK"; then
     echo 'error: Download failed! Please check your network or try again.'
